@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 13, 2016 8:59:55 PM by Hibernate Tools 5.1.0.CR1 -->
+<hibernate-mapping>
+    <class name="neu.edu.Replies" table="replies" catalog="restaurant_review_updated" optimistic-lock="version">
+        <id name="replyId" type="int">
+            <column name="reply_id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="comments" class="neu.edu.Comments" fetch="select">
+            <column name="comment_id" />
+        </many-to-one>
+        <many-to-one name="user" class="neu.edu.User" fetch="select">
+            <column name="user_id" />
+        </many-to-one>
+        <property name="replyDesc" type="string">
+            <column name="reply_desc" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

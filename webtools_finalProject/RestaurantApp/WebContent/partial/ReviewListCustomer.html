@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/styles.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reviews</title>
+</head>
+<body>
+<div class="container">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+        <span class=" navbar-text pull-left" style="color:navy;font-size:30px;"><b>FOOD FEAST</b></span>
+ <span class="navbar-text pull-right">
+            <ul class="nav nav-pills">
+  		<li ><a href="#">Logout</a></li>
+  		</ul></span>
+        
+</nav>
+
+    <div class ="row container-fluid" style="margin-top:85px;>
+      <h3 style="color:black;">Restaurant Name</h3>
+		 <form class = "form-inline">
+            <div class="form-group">
+                <label for="review">Review</label>
+                <input type="text" class="form-control" id="review" placeholder="review">
+            </div>
+            <div class="form-group">
+        <label for="star_rating">Star Rating</label>
+       <select id="star_rating"  name="star_rating" class="form-control"  >
+  			<option value="1" class="form-control"  >1</option>
+ 			 <option value="2" class="form-control"  >2</option> 
+ 			  <option value="2" class="form-control"  >3</option> 
+ 			   <option value="2" class="form-control"  >4</option> 
+ 			    <option value="2" class="form-control"  >5</option> 
+ 			 </select>
+    </div>
+             <div class="form-group">
+        <label for="food_rating ">Food Rating</label>
+       <select id="food_rating"  name="food_rating" class="form-control"  >
+  			<option value="1" class="form-control"  >1</option>
+ 			 <option value="2" class="form-control"  >2</option> 
+ 			  <option value="3" class="form-control"  >3</option> 
+ 			   <option value="4" class="form-control"  >4</option> 
+ 			    <option value="5" class="form-control"  >5</option> 
+ 			 </select>
+    </div>
+     <div class="form-group">
+        <label for="service_rating">Service Rating</label>
+       <select id="service_rating"  name="service_rating" class="form-control"  >
+  			<option value="1" class="form-control"  >1</option>
+ 			 <option value="2" class="form-control"  >2</option>
+ 			  <option value="3" class="form-control"  >3</option> 
+ 			   <option value="4" class="form-control"  >4</option> 
+ 			    <option value="5" class="form-control"  >5</option>  
+ 			 </select>
+    </div>
+            <div class="form-group">
+                <label for="cost">Cost</label>
+                <input type="text" class="form-control" id="Cost" placeholder="cost">
+            </div>
+        </form>
+	<br/>
+       
+        <a class="btn btn-danger  btn-block"
+           href="login.html">Publish Review</a>
+    </div>
+    <br/>
+            <ul class="list-group ">
+          
+                <li class="list-group-item ">
+                <p>Customer_Name</p>
+                 <p>Review_comments</p>
+                 <p>Star Rating: 1</p>
+                 <p> Service_Rating:5</p>
+                 <p> Food_Rating:5</p>
+                 <p> Cost: </p>
+                 <p><a href="#">comment</a></p>
+                  <ul class="list-group ">
+                <li class="list-group-item ">
+                 <p>Customer_Name</p>
+                 <div class="form-group">
+                <input type="text" class="form-control" id="review" placeholder="cost">
+           	 </div>
+                 </li>
+                 </ul>
+                
+          
+                <li class="list-group-item ">
+                <p>Customer_Name</p>
+                 <p>Review_comments</p>
+                 <p>Star Rating: 1</p>
+                 <p> Service_Rating:5</p>
+                 <p> Food_Rating:5</p>
+                 <p> Cost: </p>
+                 <p><a href="#">comment</a></p>
+                  <ul class="list-group ">
+                <li class="list-group-item ">
+                 <p>Customer_Name</p>
+                 <p>Comment_desc</p>
+                 </li>
+                 </ul>
+                 </ul>
+                
+
+</div>
+
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+</nav>
+</div>
+</body>
+</html>

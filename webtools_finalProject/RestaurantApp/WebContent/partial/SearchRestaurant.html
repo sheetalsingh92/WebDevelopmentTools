@@ -1,0 +1,13 @@
+<div class ="row container-fluid">
+            <ul class="list-group " style="margin-top:85px;">
+                <li class="list-group-item" ng-repeat="restaurant in searchCtrl.restaurantList">
+     				  <p> <a>{{restaurant.restaurantName}}</a>
+                 <button class= "link pull-right btn-danger" ng-click="searchCtrl.redirectToReviews(restaurant.restaurantID)">Reviews</button></p>
+                 <p>{{restaurant.location}}</p>
+                <p>{{restaurant.star_rating}}<p>
+		        <p>{{restaurant.type}}</p>
+		         <p>{{restaurant.approval_status}}</p>
+                </li>
+            </ul>
+</div>
+

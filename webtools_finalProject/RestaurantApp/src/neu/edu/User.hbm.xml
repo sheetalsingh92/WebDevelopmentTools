@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 13, 2016 8:59:55 PM by Hibernate Tools 5.1.0.CR1 -->
+<hibernate-mapping>
+    <class name="neu.edu.User" table="user" catalog="restaurant_review_updated" optimistic-lock="version">
+        <id name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="45" not-null="true" unique="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="45" />
+        </property>
+        <property name="dob" type="string">
+            <column name="dob" length="45" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="45" />
+        </property>
+        <property name="emailId" type="string">
+            <column name="email_id" length="45" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="45" />
+        </property>
+        <one-to-one name="admin" class="neu.edu.Admin"></one-to-one>
+        <one-to-one name="owner" class="neu.edu.Owner"></one-to-one>
+        <set name="replieses" table="replies" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="neu.edu.Replies" />
+        </set>
+        <set name="commentses" table="comments" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="neu.edu.Comments" />
+        </set>
+        <one-to-one name="customer" class="neu.edu.Customer"></one-to-one>
+        <set name="restaurants" table="restaurant" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="createdby" />
+            </key>
+            <one-to-many class="neu.edu.Restaurant" />
+        </set>
+    </class>
+</hibernate-mapping>

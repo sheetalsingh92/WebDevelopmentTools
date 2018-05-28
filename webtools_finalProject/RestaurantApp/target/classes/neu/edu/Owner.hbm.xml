@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 13, 2016 8:59:55 PM by Hibernate Tools 5.1.0.CR1 -->
+<hibernate-mapping>
+    <class name="neu.edu.Owner" table="owner" catalog="restaurant_review_updated" optimistic-lock="version">
+        <id name="ownerId" type="int">
+            <column name="owner_id" />
+            <generator class="foreign">
+                <param name="property">user</param>
+            </generator>
+        </id>
+        <one-to-one name="user" class="neu.edu.User" constrained="true"></one-to-one>
+        <property name="contactNo" type="string">
+            <column name="contact_no" length="45" />
+        </property>
+        <set name="restaurants" table="restaurant" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="owner_id" />
+            </key>
+            <one-to-many class="neu.edu.Restaurant" />
+        </set>
+    </class>
+</hibernate-mapping>

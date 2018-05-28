@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 13, 2016 8:59:55 PM by Hibernate Tools 5.1.0.CR1 -->
+<hibernate-mapping>
+    <class name="neu.edu.Reviews" table="reviews" catalog="restaurant_review_updated" optimistic-lock="version">
+        <id name="reviewId" type="java.lang.Integer">
+            <column name="review_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="customer" class="neu.edu.Customer" fetch="select">
+            <column name="customer_id" />
+        </many-to-one>
+        <many-to-one name="restaurant" class="neu.edu.Restaurant" fetch="select">
+            <column name="restaurant_id" />
+        </many-to-one>
+        <property name="starRating" type="java.lang.Integer">
+            <column name="star_rating" />
+        </property>
+        <property name="comments" type="string">
+            <column name="comments" length="45" />
+        </property>
+        <property name="serviceRating" type="java.lang.Integer">
+            <column name="service_rating" />
+        </property>
+        <property name="foodRating" type="java.lang.Integer">
+            <column name="food_rating" />
+        </property>
+        <property name="cost" type="java.lang.Integer">
+            <column name="cost" />
+        </property>
+        <set name="commentses" table="comments" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="review_id" />
+            </key>
+            <one-to-many class="neu.edu.Comments" />
+        </set>
+    </class>
+</hibernate-mapping>

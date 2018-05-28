@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 13, 2016 8:59:55 PM by Hibernate Tools 5.1.0.CR1 -->
+<hibernate-mapping>
+    <class name="neu.edu.Restaurant" table="restaurant" catalog="restaurant_review_updated" optimistic-lock="version">
+        <id name="restaurantId" type="java.lang.Integer">
+            <column name="restaurant_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="owner" class="neu.edu.Owner" fetch="select">
+            <column name="owner_id" />
+        </many-to-one>
+        <many-to-one name="user" class="neu.edu.User" fetch="select">
+            <column name="createdby" />
+        </many-to-one>
+        <property name="restaurantName" type="string">
+            <column name="restaurant_name" length="45" unique="true" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="45" />
+        </property>
+        <property name="starRating" type="java.lang.Integer">
+            <column name="star_rating" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="45" />
+        </property>
+        <property name="approvalStatus" type="string">
+            <column name="approval_status" length="45" />
+        </property>
+        <set name="reviewses" table="reviews" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="restaurant_id" />
+            </key>
+            <one-to-many class="neu.edu.Reviews" />
+        </set>
+    </class>
+</hibernate-mapping>

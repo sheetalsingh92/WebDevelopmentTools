@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link href="css/styles.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page</title>
+    <base href="/RestaurantApp/">
+</head>
+<body>
+<div ng-controller="appController as appCtrl">
+<nav class="navbar navbar-default navbar-fixed-top">
+
+          <span><a class="navbar-brand navbar-text pull-left" style="color:navy;font-size:30px;" href="#"><b>FOOD FEAST</b></a> </span>
+
+            <span class="navbar-text pull-right">
+            <ul class="nav nav-pills">
+  		<li  class="active"><a href="#home">Home</a></li>
+  		<li ><a  class="btn" role="button" ng-click="appCtrl.redirectToLogin()">Login</a></li>
+ 		<li ><a  class="btn" role="button" ng-click="appCtrl.redirectToRegister()">Register</a></li>
+</ul></span>
+</nav>
+<div ng-view></div>
+<div style="margin-top:30px;">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+
+       <h6>@Copyright - 2010</h6>
+
+</nav>
+</div>
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="//code.angularjs.org/1.5.8/angular.js"></script>
+	<script src="//code.angularjs.org/1.5.8/angular-route.js"></script>
+	<script src="//code.angularjs.org/1.5.8/angular-cookies.js"></script>
+	<script src="//code.angularjs.org/1.5.8/angular-sanitize.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.3.0.js"></script>
+	
+	<script type="text/javascript" src="js/app.js"></script><!--Registration Module -->
+	<script type="text/javascript" src="js/app-router.js"></script><!--Navigation and APP LEVEL config Module -->
+	<script type="text/javascript" src="js/app-const.js"></script><!--Application Const. -->
+	<script type="text/javascript" src="js/app-component.js"></script><!--Application Compnents. -->
+	
+	
+	<script type="text/javascript" src="js/app.module.js"></script>
+	<script type="text/javascript" src="js/welcome.module.js"></script>
+	<script type="text/javascript" src="js/login.module.js"></script>
+	<script type="text/javascript" src="js/Registration.module.js"></script>
+	<script type="text/javascript" src="js/search.module.js"></script> 
+	<script type="text/javascript" src="js/addOwnertoRestaurant.module.js"></script>
+	<script type="text/javascript" src="js/addReview.module.js"></script>
+	<script type="text/javascript" src="js/approveRestaurant.module.js"></script>
+	<script type="text/javascript" src="js/createOwner.module.js"></script>
+	<script type="text/javascript" src="js/createRestaurant.module.js"></script>
+	<script type="text/javascript" src="js/customerRestaurantList.module.js"></script>
+	<script type="text/javascript" src="js/deleteCustomer.module.js"></script>
+	<script type="text/javascript" src="js/deleteOwner.module.js"></script>
+	<script type="text/javascript" src="js/deleteRestaurant.module.js"></script>
+	<script type="text/javascript" src="js/ownerRestaurantList.module.js"></script>
+	<script type="text/javascript" src="js/review.module.js"></script>
+	<script type="text/javascript" src="js/updateRestaurant.module.js"></script>
+	
+	
+</div>	
+</body>
+</html>

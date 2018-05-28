@@ -1,0 +1,155 @@
+body
+{
+	margin:0 auto;
+	width:70%;
+    border: 5px solid;
+    padding: 15px;
+	text-align:justify;
+	 
+}
+
+#personaldetails{
+	position: absolute;
+    z-index: 1;
+	margin-top: 16px;
+	
+}
+
+.wrapper{
+	background-color:#E3EDD8;
+	padding: 20px;
+}
+
+#profilepic
+{
+	clear:both;
+	float:right;
+	
+}
+#header
+{
+   
+    z-index: 1;
+    height:100px;
+   
+    margin-bottom: 10px;
+	
+    }
+
+#name {
+    float:left;
+	font-size: 20px;
+	font-family: Verdana, sans-serif;
+	
+}
+
+#right_footer 
+{
+	clear:both;
+	float:right;
+}
+
+#right_footer ul li{
+	list-style-type:none;
+	display:inline;
+}
+
+#email a{
+  
+    
+	
+	font-size: 15px;
+	font-family: Verdana, sans-serif;
+	clear:both;
+	float:left;
+}
+
+#contact
+{
+  
+	font-size: 13px;
+	font-family: Verdana, sans-serif;
+	
+	clear:both;
+	float:left;
+    }
+
+	#address{
+	font-size: 13px;
+	font-family: Verdana, sans-serif;
+
+	clear:both;
+	float:left;
+	}
+a:hover {
+    font-weight: bold;
+}
+
+#footer
+{
+    height:40px;
+   
+    }
+
+	#myProgress {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #ddd;
+}
+
+#web, #client, #applications, #prog {
+  position: absolute;
+  width: 1%;
+  height: 100%;
+  background-color: #4CAF50;
+}
+    
+h3
+{
+    text-decoration: underline;
+	margin-bottom:0px;
+    }
+	p{
+		margin-top:5px;
+	}
+#job-responsibilities
+{
+    padding: 1px;
+    }
+
+
+#course-name
+{
+    font-weight:bold;
+    }
+
+#company-name
+{
+    height:2px;
+    text-decoration:underline;
+	margin-top:8px;
+	margin-bottom: 24px;
+    }
+#job-title
+{
+    margin-top: 20px;
+    }
+
+#heading
+{
+    font-weight:bold;
+
+    }
+	
+p
+{
+    font-weight:normal;
+		line-height:23px;
+    }
+	
+ul{
+	    margin-left: -22px;
+    font-weight: normal;
+	line-height:23px;
+}

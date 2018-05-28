@@ -1,0 +1,170 @@
+<html>
+ <head>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+<title>Sheetal Singh Resume</title> 
+
+</head>
+<body onload="move(); move1(); move2(); move3();">
+<div class="wrapper">
+<div id="header">
+<div id="personaldetails">
+<div id="name"><b>SHEETAL SINGH</b></div>
+<div id="email"><a href="mailto:sheetalkhatri91@gmail.com" target="_blank">sheetalkhatri91@gmail.com</a></div>
+<div id="address">75 Saint Alphonsus Street,Boston,MA,02120</div>
+<div id="contact">617-708-6082</div>
+</div>  
+<div id="profilepic"><img src="sheetal_profile.png" width="125px" height="100px" alt="profile_pic"/></div>
+</div>
+<div class="education">
+<h3>EDUCATION</h3>
+<p><b>Northeastern University,Boston,MA</b>
+Master's of Science in Information Systems
+Relevant Courses: Application Engineering Development, Database Management, Web Tools, Advances in data Science.
+</p>
+<p><b>Mumbai University, India</b>
+Bachelor of Engineering in Information Technoloy
+</p>
+</div>
+
+<div class="content">
+    <h3>SUMMARY</h3>
+            <p>
+       Professional Software Developer having more than two years of experience covering all phases of
+		Software Development Life Cycle (SDLC) namely requirement analysis, design, development, testing,
+		implementation, documentation and end-user training of web based applications.
+            </p>
+			<h4><b>Technical Skills:</b></h4>
+			 <ul>
+                <li>Programming Language: C++, VB, C# 
+				<div id="myProgress">
+				<div id="prog"><div id="label">82%</div></div></div></li>
+                <li>Web Application Development(ASP.NET, HTML, CSS, Web API, PHP)
+				<div id="myProgress">
+				<div id="web"><div id="label">85%</div></div></div></li>
+                <li>Client-side Technologies: JavaScript, JQUERY
+				<div id="myProgress">
+				<div id="client"><div id="label">75%</div></div></div></li>
+				<li>Applications: NetBeans, Git, Bit Bucket, Eclipse, WebStorm IDE
+				<div id="myProgress">
+				<div id="applications"><div id="label">80%</div></div></div></li>
+				</ul>
+                </p>
+            <h3>PROFESSIONAL EXPERIENCE</h3>
+            <h4 id="company-name">Infinite Computing Systems Pvt. Ltd., India</h4>
+            <p id="job-title"><strong>Software Developer</strong></p>
+           
+            <ul>
+                <li>Worked with clients like <b>Chestnut Global Partners, Citibank and Republic Parking.</b></li>
+                <li>Gained Expertise in using various software tools, languages and methodologies with special expertise
+				in Microsoft .NET technologies and experience of developing end-to-end web applications on
+				ASP.Net.</li>
+                <li>Worked on Visual Studio 2013 using C# concepts and DotNetNuke. Also, worked on SQL server.</li>
+                <li>Created skins and user controls for a DNN Website. Hands on experience in HTML and CSS.</li>
+				<li>Have been part of an onshore development team in Bangkok, Thailand. There we as a team reduced
+				the execution time of development process by 2 days with analysis, design, code development, unit
+				testing and defect fixing which in a way increased efficiency.</li>
+				<li>Performed Software development under CMMI-III Processes.</li></ul>
+			
+		
+            <h3>ACADEMIC PROJECTS</h3>
+            <h4 id="company-name">Secure Web Browser</h4>
+            <p>Developed a browser to handle security threats by providing each user an encrypted master password, so
+			that he will be able to access all his accounts. The browser has dynamic links to the database stored in the
+			pen-drive.</p>
+			
+			 <h4 id="company-name">Alzheimer Patient Care</h4>
+			 <p>Developed a swing application to provide Alzheimer patient care facilities. In this application a request-response
+			 model was built for communication regarding patient's data between receptionist,Doctor,Caretaker,etc. 
+			</p>
+			
+			 <h4 id="company-name">Rossmann Sales Data Prediction</h4>
+			 <p>Developed a website with the functionality to analyze Sales of Rossmann Stores in Germany. 
+			 Various languages and tools used in this project were R Programming,ASP.Net,C#,VS 2015,Microsoft Azure, Power BI,AWS,etc.
+			 In this project, we predicted, classified and even build clusters for Sales of the Rossmann Stores.</p>
+			
+		
+            <h3>PERSONAL INFORMATION</h3>
+            <p>
+            <ul>
+                <li>
+                I am a confident,smart working and highly motivated person. I believe in always being open to learn new things.
+                <li>
+                <span id="course-name">Languages Known:</span>English, Hindi</li>
+                <li>
+                <span id="course-name">Hobbies:</span>perform Bharatnatyam(Indian classical dance), listening music, surfing Internet.</li> 
+				<li>
+                <span id="course-name">Places Visited:</span>India, USA, Thailand</li></ul>
+            </p>
+           
+            <h3>Declaration</h3>
+            <p>
+            I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>
+     </div>
+     <div id="footer">
+	  <div id="right_footer">
+  <ul>
+  <li><a href="https://www.instagram.com/sheetalsingh01/" target="_blank"><img src="insta.png" width="40px" height="40px"/></a>
+   <li><a href="www.linkedin.com/in/sheetal-singh-222ab0115"target="_blank"><img src="linkedin.png" width="40px" height="40px"/></a>
+    <li><a href=""><img src=""/></a></ul>
+	 </div>
+    </div>
+	
+	<script>
+function move() {
+  var elem = document.getElementById("web");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 85) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+
+function move1() {
+  var elem = document.getElementById("client");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 75) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+
+function move2() {
+  var elem = document.getElementById("applications");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 80) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+
+function move3() {
+  var elem = document.getElementById("prog");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 82) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+</script>
+	</body>
+</html>
